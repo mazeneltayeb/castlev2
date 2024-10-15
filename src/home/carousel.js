@@ -2,7 +2,10 @@ import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import imgOne from "./carousel-img/1.jpg"
 import imgTwo from "./carousel-img/2.jpg"
-import imgThree from "./carousel-img/3.png"
+import imgThree from "./carousel-img/3.jpg"
+import imgFour from "./carousel-img/4.jpg"
+import imgFive from "./carousel-img/5.jpg"
+import imgSix from "./carousel-img/6.jpg"
 import "./home.css"
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -12,28 +15,29 @@ function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel className='banner-carousel' activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
       <img src={imgOne} alt='Error' className='img-fluid'/>
-        <Carousel.Caption>
-          {/* <h3>First slide label</h3> */}
+      <img src={imgTwo} alt='Error' className='img-fluid'/>
+        <Carousel.Caption className='d-flex  flex-column justify-content-evenly align-items-center'>
+          <h1>Luxury Dining Room</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item >
       <Carousel.Item>
-      <img src={imgTwo} alt='Error' className='img-fluid'/>
-        <Carousel.Caption>
-          {/* <h3>Second slide label</h3> */}
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src={imgFour} alt='Error' className='img-fluid'/>
+      <img src={imgThree} alt='Error' className='img-fluid'/>
+        <Carousel.Caption className='d-flex  flex-column justify-content-evenly align-items-center'>
+        <h1>Luxury Dining Room</h1>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img src={imgThree} alt='Error' className='img-fluid'/>
-        <Carousel.Caption>
-          {/* <h3>Third slide label</h3> */}
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+      <img src={imgSix} alt='Error' className='img-fluid'/>
+      <img src={imgFive} alt='Error' className='img-fluid'/>
+        <Carousel.Caption className='d-flex  flex-column justify-content-evenly align-items-center'>
+        <h1>Luxury Dining Room</h1>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

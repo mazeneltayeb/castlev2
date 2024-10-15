@@ -3,11 +3,14 @@
     --main-color:#dbbf8d
 }
 .nav{
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
+    /* background-image: linear-gradient(to right, #dbbf8d, #dbc49a, #dbc8a7, #dbcdb5, #dad1c2); */
+    /* background-image: linear-gradient(to right, #dbbf8d, #d0b78b, #c6af88, #bba886, #b1a083); */
+    background-image: linear-gradient(to right, #dbbf8d, #d0b78b, #c6af88, #bba886, #b1a083);
     z-index: 99999;
-    position: fixed;
     width: 100%;
     height: 52px;
+    border-bottom: 1px solid white;
 }
 .nav-bar-icon{
     display: none;
@@ -64,6 +67,7 @@ margin-left:4rem ;
 @media (width < 600px) {
     .nav {
         height: 48px;
+        transition:left .3s ease-in-out;
     }
     .logo{
         position: absolute;
@@ -80,12 +84,12 @@ margin-left:4rem ;
         background-color: #dbbf8d;
         border-top: solid 1px #fff8ec;
         box-shadow: 1px 20px 20px 0px #736448;
-        transition: all .3s ease-in-out;
+        /* transition: left .3s ease-in-out; */
 }
        /*  */
     ul.active{
         left: 0px;
-        transition:all .3s ease-in-out;
+        transition:left .3s ease-in-out;
         
     }
     ul.active li{

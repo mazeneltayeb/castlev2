@@ -1,3 +1,7 @@
+:root{
+    --main-color:#dbbf8d
+}
+
 /* banner */
 .banner{
     background-image:url(./img/banner.png) ;
@@ -66,6 +70,20 @@
     .sectionone img{
         width: 100dvw;
     }
+
+}
+
+@media (width < 600px) {
+    .banner-carousel  .carousel-item :first-child{
+        display: none;
+    }
+    .banner-carousel img{
+        height: 25dvh !important;
+        width: 100dvw !important;
+    }
+    .banner-carousel .carousel-caption{
+        display: none !important;
+    }
     
 }
 /* sectionone */
@@ -99,3 +117,25 @@
 .orangcolor{
     color: #F8B20F;
 }
+
+.banner-carousel{
+    position: relative;
+}
+.banner-carousel img{
+    height: 45dvh;
+    width: 50dvw;
+    /* width: calc(100dvw / 3); */
+}
+
+.banner-carousel .carousel-caption{
+    background-color: #b1a083;
+    background-image: linear-gradient(to right, #dbbf8d, #d0b78b, #c6af88, #bba886, #b1a083);
+    height: 46dvh;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+.carousel-indicators [data-bs-target]{
+    display: none;
+}
+

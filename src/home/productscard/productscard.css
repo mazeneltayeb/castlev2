@@ -1,7 +1,8 @@
 .product{
     padding: 50px !important;
     width: 100dvw;
-
+    background-color: #fff8ec;
+   
 }
 .product.row {
      --bs-gutter-x: 0rem;
@@ -12,7 +13,8 @@
     min-width:  306px;
     max-width: 450px;
     padding: 25px 10px;
-    background-color: #d3b684;
+    /* background-color: #d3b684; */
+    background-color: #f5e9d4;
     border-radius: 5px;
 }
 .product .title-sectionone{
@@ -28,7 +30,7 @@
     position: absolute;
     height: 3px;
     width: 80px;
-    background-color: white;
+    background-color: #b48b1a;
     border-radius: 10px;
     bottom: -6px;
     left: 50%;
@@ -44,10 +46,11 @@
       height: 200px;
 }
 .whatsapp-details{
-    background-color: black;
+    /* background-color: black; */
+    background-color: #dbbf8d;
     color: white;
     border: none;
     padding: 5px;
     border-radius: 4px;
-    font-weight: 400;
+    font-weight: 700;
 }

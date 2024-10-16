@@ -3,17 +3,20 @@ import ControlledCarousel from "./carousel";
 import Productcard from "./productscard/Productcard";
 import TeamSlider from "./ProductSlider";
 import SectionOne from "./sectionone";
+import Sectionthree from "./Sectionthree";
 import SectionTwo from "./sectionTwo";
 function Home() {
     return (
         <>
         <ControlledCarousel/>
-        <Productcard/>
-        {/* <Banner/> */}
-        {/* <SectionTwo/>
         <SectionOne/>
-        <TeamSlider/>
-        <div>home page</div> */}
+        <Productcard/>
+        <Sectionthree/>
+        {/* <TeamSlider/>
+        <Banner/>
+        <SectionTwo/>
+        <TeamSlider/> */}
+
         </>
         
     )

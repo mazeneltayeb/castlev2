@@ -9,8 +9,8 @@ function SectionOne(){
                             <span className="mt-3 mx-3">Welcome to </span> 
                             <span className="mt-3 mx-3">Castle Furniture Egypt</span>
                         </div>
-                <div className="col-lg-6 col-md-6 text-center text-lg-start ">
-                       <p>Let your home décor make a grand statement with our luxurious furniture pieces
+                <div className="col-lg-6 col-md-6 text-center text-lg-start align-items-center d-flex">
+                       <p className="d-flex justify-content-center ">Let your home décor make a grand statement with our luxurious furniture pieces
                              at Castle Furniture Egypt. For over 25 years, we have been recognized for our 
                              distinctive and luxurious furniture sets that are made from the highest quality
                               materials and fabrics. We specialize in upholstery living room sets as well

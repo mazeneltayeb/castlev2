@@ -10,7 +10,7 @@ function Sectionthree (){
     return(
         <div className="row section-three 'd-flex  justify-content-evenly align-items-center mt-5">
                     <span className="col-sm-12 col-lg-12 col-md-12 text-center mb-5">Our Inventory Includes</span>
-    <div className="row p-5 ">
+    <div className="row p-5 justify-content-center">
         <div className="col-lg-3 col-md-6 col-sm-6  text-center section-three-card mb-5">
             <img className="img-fluid mb-5" src={bedroom} alt=""/>
             <span >bed room</span>

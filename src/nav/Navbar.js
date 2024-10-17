@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown';
 import "./nav.css"
-import logoimg from "./img/1728221645__1_-removebg-preview.png"
+import logoimg from "./img/cropped-cropped-Untitled-1-copy-1-1.png"
 import { useState } from "react";
 function NavBar() {
   const [showNavbar, setShowNavbar]=useState(false)

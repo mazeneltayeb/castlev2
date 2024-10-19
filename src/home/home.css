@@ -82,6 +82,7 @@
     .sectionone img{
         width: 100dvw;
     }
+ 
 
 }
 
@@ -214,10 +215,17 @@ position: relative;
 }
 /* section-three */
 
-/* location */
-.main-location{
-    background-color: #fff8ec;
-    padding: 70px;
+/* Footer */
+.main-footer{
+    background-color: #dbbf8d;
+    padding: 25px;
+}
+.social-media{
+    padding: 25px;
+}
+.social-media svg {
+    font-size: 40px;
+    color: #fff8ec;
 }
 .location-description{
     background-color: white;
@@ -266,10 +274,7 @@ position: relative;
     .location-address :nth-child(3){
         display: block;
     }
-    .location-address :nth-child(6){
-        /* margin-right: 6px !important; */
-    }
-    .button img, svg {
+    .button  svg {
         transform: rotateZ(90deg);
     }
 }
@@ -287,4 +292,4 @@ position: relative;
     color: #dbbf8d !important;
 }
 }
-/* location */
+/* Footer */

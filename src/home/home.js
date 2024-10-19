@@ -1,6 +1,6 @@
 import Banner from "./banner";
 import ControlledCarousel from "./carousel";
-import Location from "./Location";
+import Footer from "./Footer";
 import Productcard from "./productscard/Productcard";
 import TeamSlider from "./ProductSlider";
 import SectionOne from "./sectionone";
@@ -13,7 +13,7 @@ function Home() {
         <SectionOne/>
         <Productcard/>
         <Sectionthree/>
-        <Location/>
+        <Footer/>
         {/* <TeamSlider/>
         <Banner/>
         <SectionTwo/>

@@ -3,12 +3,85 @@
     --main-color:white
 }
 
+/* banner-carousel */
+.banner-carousel{
+    position: relative;
+  box-shadow:   1px 20px 20px 0px #dbbf8d ;
+}
+.banner-carousel img{
+    height: 45dvh;
+    width: 50dvw;
+}
+
+@media (width < 600px) {
+    .banner-carousel  .carousel-item :first-child{
+        display: none;
+    }
+    .banner-carousel img{
+        height: 25dvh !important;
+        width: 100dvw !important;
+    }
+    .banner-carousel  .carousel-item h1{
+        display: block !important;
+    }
+    .banner-carousel  .carousel-item p{
+        display: none;
+    }
+    
+}
+
+.banner-carousel .carousel-caption {
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #43310475;
+
+}
+.banner-carousel .carousel-caption h1{
+    font-family: "Dancing Script", cursive;
+    color:#FAB009;
+    color: #f8e7cb;
+    position: relative;
+}
+/* .banner-carousel .carousel-caption h1::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 5px;
+    background-color: #FAB009;
+    background-color: #fab009c7;
+    bottom: -30%;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 5px;
+} */
+.banner-carousel .carousel-caption p{
+    display: none;
+    /* font-family: "Dancing Script", cursive;
+    color:#FAB009;
+    color: #fab009c7; */
+
+}
+
+.carousel-control-prev{
+    display: none;
+}
+.carousel-control-next-icon{
+    display: none;
+}
+.carousel-indicators [data-bs-target]{
+    display: none;
+}
+/* banner-carousel */
+
+
 /* banner */
-.banner{
+/* .banner{
+    background-image: linear-gradient(rgba(376, 255, 300, -6.5), rgba(255, 255, 255, 0.5)), url(./img/download_11zon.copy.png);   
     background-image:url(./img/banner.png) ;
     height: 90dvh;
     width: 100dvw;
-    /* background-image: linear-gradient(rgba(376, 255, 300, -6.5), rgba(255, 255, 255, 0.5)), url(./img/download_11zon.copy.png);    */
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
@@ -22,7 +95,7 @@
 }
 .bannertext :last-child{
  color:#F8B20F;
-}
+} */
 /* banner */
 
 /* sectionone */
@@ -38,7 +111,7 @@
 .sectionone .ready :first-child ,.sectionone .ready :last-child{
     position: relative;
     z-index: 2;
-    color: white;
+    color: #fff8ec;
     width: fit-content;
     font-size: 18px;
     font-weight: 600;
@@ -71,8 +144,39 @@
     border-radius: 20px;
     width: fit-content; 
 }
-.sectionone-video {
-    /* width: 0px; */
+.sectionone-video{
+    position: relative;
+    z-index: 1;
+}
+.sectionone-video::before {
+    content: "";
+position: absolute;
+/* clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%); */
+background-color: #dbbf8d;
+width: 10%;
+height: 95%;
+   z-index: -1;
+left: -10px;
+}
+@media (width > 1088px) {
+    .sectionone-video::before{
+        height: 95%;
+    }
+}
+@media (width < 1088px) {
+    .sectionone-video::before{
+        height: 80%;
+    }
+}
+@media (width < 788px) {
+    .sectionone-video::before{
+        height: 73%;
+    }
+}
+@media (width < 768px) {
+    .sectionone-video::before{
+        height: 90%;
+    }
 }
  .sectionone-video  video{
     min-width: 80%;
@@ -118,68 +222,6 @@
 .orangcolor{
     color: #F8B20F;
 }
-
-/* banner-carousel */
-.banner-carousel{
-    position: relative;
-}
-.banner-carousel img{
-    height: 45dvh;
-    width: 50dvw;
-}
-
-@media (width < 600px) {
-    .banner-carousel  .carousel-item :first-child{
-        display: none;
-    }
-    .banner-carousel img{
-        height: 25dvh !important;
-        width: 100dvw !important;
-    }
-    .banner-carousel  .carousel-item h1{
-        display: block !important;
-    }
-    .banner-carousel  .carousel-item p{
-        display: none;
-    }
-    /* .banner-carousel .carousel-caption{
-        display: none !important;
-    } */
-    
-}
-
-
-/* .banner-carousel .carousel-caption{
-    background-color: #b1a083;
-    background-image: linear-gradient(to right, #dbbf8d, #d0b78b, #c6af88, #bba886, #b1a083);
-    height: 46dvh;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
-} */
-.banner-carousel .carousel-caption {
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #43310475;
-
-}
-.banner-carousel .carousel-caption h1{
-    color:#FAB009;
-}
-
-.carousel-control-prev{
-    display: none;
-}
-.carousel-control-next-icon{
-    display: none;
-}
-.carousel-indicators [data-bs-target]{
-    display: none;
-}
-/* banner-carousel */
-
 /* section-three */
 
 .section-three>span{

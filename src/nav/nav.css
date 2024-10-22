@@ -3,10 +3,6 @@
     --main-color:#dbbf8d
 }
 .nav{
-    /* background-color: var(--main-color); */
-    /* background-image: linear-gradient(to right, #dbbf8d, #dbc49a, #dbc8a7, #dbcdb5, #dad1c2); */
-    /* background-image: linear-gradient(to right, #dbbf8d, #d0b78b, #c6af88, #bba886, #b1a083); */
-    /* background-image: linear-gradient(to right, #dbbf8d, #d0b78b, #c6af88, #bba886, #b1a083); */
     background-color: #dbbf8d;
     z-index: 99999;
     width: 100%;
@@ -25,7 +21,7 @@ margin-left:4rem ;
 }
 .nav ul li a{
     text-decoration: none;
-    color: white;
+    color: #fff8ec;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
@@ -34,10 +30,9 @@ margin-left:4rem ;
 }
 .logo img{
     width: 80px;
-    /* border: 2px solid #F8B20F; */
     padding: 1px
 }
-.nav .gallerylink{
+/* .nav .gallerylink{
     color:  white ;
     background-color: #F8B20F;
     border-radius: 20px;
@@ -46,23 +41,20 @@ margin-left:4rem ;
 .nav-bar-icon{
     display: none;
     font-size: 30px;
-}
+} */
 
 /* start dropdown */
 .nav-dropdown{
     background-color: transparent;
-    /* color: black; */
     border: none;
     padding: 0;
     vertical-align: inherit;
-    color: white;
+    color: #fff8ec;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
 }
-/* .dropdown-menu  a.dropdown-item {
-    color: black !important;
-} */
+
 .dropdown-menu.show {
     display: block;
     background-color: #af9565;
@@ -71,11 +63,11 @@ margin-left:4rem ;
 
 .nav-dropdown:hover{
     background-color: transparent;
-    color: white;
+    color: #fff8ec;
 }
 .nav-dropdown:checked+.nav-dropdown, .nav-dropdown.active, .nav-dropdown.show, .nav-dropdown:first-child:active, :not(.btn-check)+.nav-dropdown:active{
     background-color: transparent !important; 
-    color: white;
+    color: #fff8ec;
 }
 /* end dropdown */
 
@@ -134,26 +126,25 @@ margin-left:4rem ;
     .nav-bar-icon .open-bar :first-child{
         width: 100%;
         height: 4px;
-        background-color: white;
+        background-color: #fff8ec;
         border-radius: 5px;
     }
     .nav-bar-icon .open-bar :nth-child(2){
         width: 90%;
         height: 4px;
-        background-color: white;
+        background-color: #fff8ec;
         border-radius: 5px;
     }
     .nav-bar-icon .open-bar :last-child{
         width: 70%;
         height:4px;
-        background-color: white;
+        background-color: #fff8ec;
         border-radius: 5px;
     }
     .open-bar.active span:first-child{
         position: absolute;
         width: 80%;
         height: 4px;
-        background-color: white;
         top: 10px;
         border-radius: 15px;
         transform: rotate(45deg);
@@ -166,7 +157,6 @@ margin-left:4rem ;
         position: absolute;
         width: 80%;
         height: 4px;
-        background-color: white;
         bottom: 6px;
         border-radius: 15px;
         transform: rotate(-45deg);

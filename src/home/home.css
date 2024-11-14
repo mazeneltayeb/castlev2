@@ -18,11 +18,13 @@
         display: none;
     }
     .banner-carousel img{
-        height: 25dvh !important;
+        height: 60dvh !important;
         width: 100dvw !important;
     }
     .banner-carousel  .carousel-item h1{
         display: block !important;
+        font-size: 56px;
+        font-weight: bold;
     }
     .banner-carousel  .carousel-item p{
         display: none;

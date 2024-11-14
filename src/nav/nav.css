@@ -85,7 +85,7 @@ margin-left:4rem ;
         display: flex !important;
         flex-direction: column;
         height: 100dvh;
-        width: 45dvw;
+        width: 60dvw;
         position: absolute;
         left: -500px;
         top: 48px;
@@ -162,7 +162,7 @@ margin-left:4rem ;
         transform: rotate(-45deg);
     }
     .nav-bar-icon:has(.active){
-        left: 35dvw;
+        left: 50dvw;
         transition:  all .4s  ease-in-out;
     }
     .nav-bar-icon:not(.active){
